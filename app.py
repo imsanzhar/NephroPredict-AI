@@ -125,6 +125,6 @@ if nn_model is not None and xgb_model is not None and scaler is not None:
         else:
             st.success("✅ Төмен қауіп анықталды")
     
-    st.progress(final_prob)
+    st.progress(float(final_prob))
 else:
     st.warning("Күтіңіз... Модельдер немесе Скейлер жүктелуде. (Please ensure .pth, .pkl, and scaler files are in the directory).")
